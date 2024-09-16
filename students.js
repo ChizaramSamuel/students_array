@@ -28,13 +28,7 @@ const filterByGrade = (students, Grade) => {
 
 console.log(filterByGrade(students, 'C'))
 
-/* const averageAge = (students) => {
-  const ageOfStudents = students.filter(student => typeOf student === 'number');
-  const sum = ageOfStudents.reduce((total, num) => total + num);
 
-const average = sum/ageOfStudents.length
-return average;
-} */
 
 const averageAge = (students) => {
   const sum = students.reduce((acc, student) => acc + student.age, 0);
